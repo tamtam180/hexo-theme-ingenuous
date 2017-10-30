@@ -11,10 +11,12 @@
   clearfix()
 
 .article-date
-  @extend $block-caption
+  @extend $block-caption, $date-title-font
+  margin-bottom: 0.3em
   float: left
 
 .article-category
+  @extends $date-title-font
   float: left
   line-height: 1em
   color: #ccc
@@ -24,8 +26,8 @@
     content: "\2022"
 
 .article-category-link
-  @extend $block-caption
-  margin: 0 12px 1em
+  @extend $block-caption, $date-title-font
+  margin: 0 12px 0.3em
 
 .article-header
   padding: article-padding article-padding 0
