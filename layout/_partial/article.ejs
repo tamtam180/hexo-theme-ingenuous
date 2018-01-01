@@ -37,6 +37,13 @@
       <% } %>
       <%- partial('post/tag') %>
     </footer>
+    <footer class="article-footer">
+      <%-
+        relatedHtmlGenerator( 
+            popular_posts_json({ maxCount: 5 , ulClass: 'popular-posts' , PPMixingRate: 0.0 , isDate: false , isImage: false , isExcerpt: false} , post )
+        )
+      %>
+    </footer>
   </div>
   <% if (!index){ %>
     <%- partial('post/nav') %>
