@@ -15,7 +15,7 @@
   @media mq-tablet
     column-count: 2
   @media mq-normal
-    column-count: 3
+    column-count: 2
 
 .archive-article
   avoid-column-break()
@@ -35,7 +35,14 @@
     color: color-link
 
 .archive-article-footer
+  clearfix()
   margin-top: 1em
+  font-size: 0.95em
+  border-top: 1px solid color-border
+  padding: 0.3em 0.4em 0.1em 0.1em
+  a
+    text-decoration: none
+
 
 .archive-article-date
   color: color-grey
