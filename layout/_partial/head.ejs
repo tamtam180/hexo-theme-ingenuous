@@ -36,6 +36,9 @@
   <% if ((is_home() || is_post()) && config.fb_pages){ %>
   <meta property="fb:pages" content="<%=config.fb_pages%>" />  
   <% } %>
+  <% if (is_post()) { %>
+  <link rel="canonical" href="<%= page.permalink %>">
+  <% } %>
   <% if (theme.rss){ %>
     <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/rss+xml">
   <% } %>
