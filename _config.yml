@@ -23,9 +23,13 @@ widgets:
 - tagcloud
 - archive
 - recent_posts
+- sidebar_ads
 
 # Miscellaneous
-google_autoads_account_id:
+adsense:
+  account_id: 
+  autoads: false
+  sidebar: 
 google_analytics:
 favicon: /favicon.png
 twitter:

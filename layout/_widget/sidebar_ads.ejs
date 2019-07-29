@@ -1,0 +1,16 @@
+<% if (config.adsense.account_id && config.adsense.sidebar) { %>
+    <div class="widget-wrap">
+      <div class="widget">
+        <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="<%=config.adsense.account_id%>"
+          data-ad-slot="<%=config.adsense.sidebar%>"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    </div>
+<% } %>
+  

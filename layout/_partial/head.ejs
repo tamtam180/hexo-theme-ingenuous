@@ -48,7 +48,10 @@
   <link href='//fonts.googleapis.com/css?family=Inconsolata|Anton' rel='stylesheet' type='text/css'>
   <%- css('css/style') %>
   <%- partial('google-analytics') %>
-  <% if (is_post() && config.google_autoads_account_id) { %>
+  <% if (config.adsense.account_id) { %>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <% } %>
+  <% if (is_post() && config.adsense.account_id && config.adsense.autoads) { %>
     <%- partial('google-auto-ads') %>
   <% } %>
 </head>
