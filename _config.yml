@@ -25,6 +25,7 @@ widgets:
 - recent_posts
 
 # Miscellaneous
+google_autoads_account_id:
 google_analytics:
 favicon: /favicon.png
 twitter:
