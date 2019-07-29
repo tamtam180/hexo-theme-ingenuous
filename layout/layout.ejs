@@ -3,6 +3,11 @@
   <div id="container">
     <div id="wrap">
       <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+      <% if (config.adsense.account_id && config.adsense.header) { %>
+        <div class="header_ads">
+          <%- partial('_partial/adsense', { account_id: config.adsense.account_id, slot_id: config.adsense.header })%>
+        </div>
+      <% } %>
       <div class="outer">
         <section id="main"><%- body %></section>
         <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>

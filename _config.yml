@@ -29,7 +29,11 @@ widgets:
 adsense:
   account_id: 
   autoads: false
+  header:
   sidebar: 
+  post_header:
+  post_footer:
+  top_mid_article:
 google_analytics:
 favicon: /favicon.png
 twitter:
