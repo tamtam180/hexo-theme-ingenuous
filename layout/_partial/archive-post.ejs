@@ -3,6 +3,11 @@
     <header class="archive-article-header">
       <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'M月D日'}) %>
       <%- partial('post/title', {class_name: 'archive-article-title'}) %>
+      <% if (post.ext_photo) { %>
+        <div class="photo_thumbnail" style="background-image: url('<%- post.ext_photo %>')"/>
+      <% } else { %>
+        <div class="photo_thumbnail" style="background-image: url('/img/noimg.png')"/>
+      <% } %>
     </header>
     <footer class="archive-article-footer">
       <%- partial('post/tag', {class_name: 'archive-article-tag'}) %>
