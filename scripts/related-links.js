@@ -30,7 +30,7 @@ hexo.extend.helper.register('relatedHtmlGenerator', function(args){
   }
   
   if (returnHTML != "") {
-    returnHTML = "<h3 class=\"widget-title\">Related Posts</h3>\n" 
+    returnHTML = "<h3 class=\"article-related-link-title\">Related Posts</h3>\n" 
       + "<ul class=\"" + args.class + "\">" + returnHTML + "</ul>";
   }
   return returnHTML;
