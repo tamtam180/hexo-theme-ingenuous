@@ -11,19 +11,29 @@
   @extend $block-caption, $date-title-font
 
 .archives
-  column-gap: 10px
-  @media mq-tablet
-    column-count: 2
-  @media mq-normal
-    column-count: 2
+  //column-gap: 10px
+  display: flex
+  flex-wrap: wrap
+  align-items: stretch
+  align-content: stretch
+  margin-left: -10px
+  //@media mq-tablet
+  //  column-count: 2
+  //@media mq-normal
+  //  column-count: 2
 
 .archive-article
   avoid-column-break()
+  @media mq-tablet
+    width: 49%
+  @media mq-normal
+    width: 49%
 
 .archive-article-inner
   @extend $block
   padding: 10px
   margin-bottom: 15px
+  margin-left: 10px
 
 .archive-article-title
   text-decoration: none
